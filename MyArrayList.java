@@ -21,4 +21,6 @@ public class MyArrayList<T>{
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index is out of bounds: " + index);
         }
+        return (T) elements[index];
     }
+}
