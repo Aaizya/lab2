@@ -43,3 +43,6 @@ public int size() {
         for (int i = 0; i < size; i++) {
             if (o.equals(elements[i])) {
                 return i;
+            }
+        }
+        return -1;
