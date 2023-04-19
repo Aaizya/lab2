@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class MyArrayList<T>{
+public class MyArrayList<T> {
     private Object[] elements;
     private int size;
 
@@ -17,12 +17,14 @@ public class MyArrayList<T>{
         elements[size] = element;
         size++;
     }
+
     public T get(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index is out of bounds: " + index);
         }
         return (T) elements[index];
     }
+
     public T remove(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index is out of bounds: " + index);
@@ -33,3 +35,5 @@ public class MyArrayList<T>{
         }
         size--;
         return removedElement;
+    }
+}
