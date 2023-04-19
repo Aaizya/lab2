@@ -23,4 +23,5 @@ public class MyArrayList<T>{
         }
         return (T) elements[index];
     }
+    public T remove(int index)
 }
