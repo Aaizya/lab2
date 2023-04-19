@@ -39,4 +39,7 @@ public class MyArrayList<T> {
 public int size() {
     return size;
 }
-
+    public int indexOf(Object o) {
+        for (int i = 0; i < size; i++) {
+            if (o.equals(elements[i])) {
+                return i;
