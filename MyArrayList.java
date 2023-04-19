@@ -52,3 +52,12 @@ public int size() {
         for (int i = size - 1; i >= 0; i--) {
             if (o.equals(elements[i])) {
                 return i;
+            }
+        }
+        return -1;
+    }
+    public void sort() {
+        Arrays.sort(elements, 0, size);
+    }
+
+}
