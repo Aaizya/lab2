@@ -27,5 +27,7 @@ public class MyArrayList<T>{
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index is out of bounds: " + index);
         }
-
-}
+        T removedElement = (T) elements[index];
+        for (int i = index; i < size - 1; i++) {
+            elements[i] = elements[i + 1];
+        }
