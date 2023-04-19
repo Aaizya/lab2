@@ -17,3 +17,5 @@ public class MyArrayList<T>{
         elements[size] = element;
         size++;
     }
+    public T get(int index) {
+        if (index < 0 || index >= size)
