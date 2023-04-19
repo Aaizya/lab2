@@ -46,3 +46,9 @@ public int size() {
             }
         }
         return -1;
+    }
+
+    public int lastIndexOf(Object o) {
+        for (int i = size - 1; i >= 0; i--) {
+            if (o.equals(elements[i])) {
+                return i;
