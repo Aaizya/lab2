@@ -36,4 +36,7 @@ public class MyArrayList<T> {
         size--;
         return removedElement;
     }
+public int size() {
+    return size;
 }
+
