@@ -18,4 +18,7 @@ public class MyArrayList<T>{
         size++;
     }
     public T get(int index) {
-        if (index < 0 || index >= size)
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Index is out of bounds: " + index);
+        }
+    }
